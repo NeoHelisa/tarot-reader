@@ -1,13 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./background.gif'); /* Replace with the path to your GIF */
+  background-size: cover; /* Make the background cover the entire viewport */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  overflow: hidden; /* Hide scrollbars if necessary */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.root-wrapper {
+  background-color: #13163fd3;
+  border-right: #e1d5ec 3px solid;
+  border-left: #e1d5ec 3px solid;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100vh;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.root-container {
+  background-color: #13163f67;
+  width: 100vw;
+  height: 100vh;
 }

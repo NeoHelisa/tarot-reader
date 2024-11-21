@@ -1,26 +1,84 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import CardReveal from "./components/CardReveal";
 
-function App() {
+type CardData = {
+  country: string;
+  tarot: string;
+  chant: string;
+  image: string;
+  position: "upright" | "reversed";
+};
+
+const App: React.FC = () => {
+  const [chant, setChant] = useState<string>(""); // User input
+  const [cards, setCards] = useState<CardData[]>([]); // All cards
+  const [showCard, setShowCard] = useState<boolean>(false); // Controls whether to show CardReveal
+  const [matchingCard, setMatchingCard] = useState<CardData | null>(null); // Matched card
+
+  // Load card data on component mount
+  useEffect(() => {
+    fetch("/cards_sf1.json")
+      .then((response) => response.json())
+      .then((data) => {
+        const updatedData = data.map((card: any) => ({
+          ...card,
+          image: `/sf1_tarot/${card.country}.png`, // Add image path dynamically
+        }));
+        setCards(updatedData);
+      })
+      .catch((error) => console.error("Error loading cards:", error));
+  }, []);
+
+  const handleReveal = () => {
+    if (chant.trim() === "") {
+      alert("Please enter a chant!");
+      return;
+    }
+
+    // Check if chant matches a card
+    const foundCard = cards.find(
+      (card) => card.chant.trim().toLowerCase() === chant.trim().toLowerCase()
+    );
+
+    if (foundCard) {
+      setMatchingCard(foundCard); // Save the matching card
+      setShowCard(true); // Show the CardReveal component
+    } else {
+      alert("Invalid chant! Please try again.");
+    }
+  };
+
+  const resetView = () => {
+    setChant("");
+    setShowCard(false);
+    setMatchingCard(null); // Reset matched card
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="root-container w-full">
+      <div className="root-wrapper flex flex-col items-center justify-center h-screen bg-gray-900 text-white w-[60vw]">
+        {!showCard ? (
+          <div className="text-center">
+            <input
+              type="text"
+              value={chant}
+              onChange={(e) => setChant(e.target.value)}
+              className="px-4 py-2 text-black rounded-md"
+              placeholder="Enter your chant..."
+            />
+            <button
+              onClick={handleReveal}
+              className="ml-4 px-6 py-3 bg-blue-600 text-white rounded-lg"
+            >
+              Submit
+            </button>
+          </div>
+        ) : (
+          <CardReveal chantInput={chant} onReset={resetView} />
+        )}
+      </div>
     </div>
   );
-}
+};
 
 export default App;
