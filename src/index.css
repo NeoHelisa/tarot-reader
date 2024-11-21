@@ -51,3 +51,51 @@ body {
   border-left: #e1d5ec 3px solid;
   transform: translateX(50%);
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+}
+
+.form button {
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #612ee0;
+    border: #e1d5ec 2px solid;
+} 
+
+.form button:hover, .form button:active  {
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #510dff;
+  border: #e1d5ec 2px solid;
+  transition: all 0.25s ease-in-out;
+} 
+
+.background {
+  background: url('./mazovia_main_banner.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-height: 120px;
+  max-width: 150px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  margin-bottom: -35px;
+}
