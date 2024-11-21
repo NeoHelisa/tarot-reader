@@ -59,13 +59,14 @@ const App: React.FC = () => {
     <div className="root-container w-full relative">
       <div className="background"></div>
       <div className="root-wrapper flex flex-col items-center justify-center h-screen bg-gray-900 text-white w-[75vw] z-10 relative">
-        <div className="page-header absolute top-10 max-w-[80vh] max-h-[10vh] h-full w-full">
+        <div className="page-header absolute top-10 max-w-[60vh] max-h-[10vh] h-full w-full">
           <img src="./page_header.png" alt="header" />
         </div>
 
         {!showCard ? (
           <form onSubmit={handleReveal} className="text-center form">
             {/* Wrapping input and button in a form */}
+            <span className="font-bold">YOUR PROTECTION CHANT:</span>
             <input
               type="text"
               value={chant}
@@ -75,7 +76,7 @@ const App: React.FC = () => {
             />
             <button
               type="submit" // Button will trigger form submission on Enter
-              className="submit-button ml-4 px-6 py-3 bg-blue-600 text-white rounded-lg"
+              className="submit-button px-6 py-3 bg-blue-600 text-white rounded-lg"
             >
               Submit
             </button>

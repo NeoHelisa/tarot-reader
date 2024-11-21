@@ -45,11 +45,17 @@ body {
 .bottom-1 {
   border-right: #e1d5ec 3px solid;
   transform: translateX(-50%);
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .bottom-3 {
   border-left: #e1d5ec 3px solid;
   transform: translateX(50%);
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .form {
@@ -72,14 +78,14 @@ body {
 .form button {
     text-transform: uppercase;
     font-weight: bold;
-    background-color: #612ee0;
+    background-color: #602ee0b4;
     border: #e1d5ec 2px solid;
 } 
 
 .form button:hover, .form button:active  {
   text-transform: uppercase;
   font-weight: bold;
-  background-color: #510dff;
+  background-color: #520dff99;
   border: #e1d5ec 2px solid;
   transition: all 0.25s ease-in-out;
 } 
@@ -97,5 +103,4 @@ body {
   position: absolute;
   bottom: 0;
   right: 10px;
-  margin-bottom: -35px;
 }
