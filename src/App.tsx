@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import CardReveal from "./components/CardReveal";
-import FogEffect from "./components/FogEffect";
 
 type CardData = {
   country: string;
@@ -58,11 +57,9 @@ const App: React.FC = () => {
 
   return (
     <div className="root-container w-full relative">
-      {/* Add the FogEffect component */}
-      <FogEffect />
 
-      <div className="root-wrapper flex flex-col items-center justify-center h-screen bg-gray-900 text-white w-[60vw] z-10 relative">
-        <div className="page-header absolute top-10 max-w-[70vh] max-h-[10vh] h-full w-full">
+      <div className="root-wrapper flex flex-col items-center justify-center h-screen bg-gray-900 text-white w-[75vw] z-10 relative">
+        <div className="page-header absolute top-10 max-w-[80vh] max-h-[10vh] h-full w-full">
           <img src="./page_header.png" alt="header" />
         </div>
 
