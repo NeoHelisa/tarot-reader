@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import CardReveal from "./components/CardReveal";
+import FogEffect from "./components/FogEffect";
 
 type CardData = {
   country: string;
@@ -29,7 +30,8 @@ const App: React.FC = () => {
       .catch((error) => console.error("Error loading cards:", error));
   }, []);
 
-  const handleReveal = () => {
+  const handleReveal = (e?: React.FormEvent) => {
+    if (e) e.preventDefault(); // Prevent default form submission
     if (chant.trim() === "") {
       alert("Please enter a chant!");
       return;
@@ -55,10 +57,18 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="root-container w-full">
-      <div className="root-wrapper flex flex-col items-center justify-center h-screen bg-gray-900 text-white w-[60vw]">
+    <div className="root-container w-full relative">
+      {/* Add the FogEffect component */}
+      <FogEffect />
+
+      <div className="root-wrapper flex flex-col items-center justify-center h-screen bg-gray-900 text-white w-[60vw] z-10 relative">
+        <div className="page-header absolute top-10 max-w-[70vh] max-h-[10vh] h-full w-full">
+          <img src="./page_header.png" alt="header" />
+        </div>
+
         {!showCard ? (
-          <div className="text-center">
+          <form onSubmit={handleReveal} className="text-center">
+            {/* Wrapping input and button in a form */}
             <input
               type="text"
               value={chant}
@@ -67,15 +77,23 @@ const App: React.FC = () => {
               placeholder="Enter your chant..."
             />
             <button
-              onClick={handleReveal}
+              type="submit" // Button will trigger form submission on Enter
               className="ml-4 px-6 py-3 bg-blue-600 text-white rounded-lg"
             >
               Submit
             </button>
-          </div>
+          </form>
         ) : (
-          <CardReveal chantInput={chant} onReset={resetView} />
+          <>
+            <CardReveal chantInput={chant} onReset={resetView} />
+          </>
         )}
+
+        <div className="bottom-wrapper pointer-events-none flex justify-between absolute bottom-20 max-h-[10vh] h-full w-full">
+          <div className="bottom-1"></div>
+          <div className="bottom-2"></div>
+          <div className="bottom-3"></div>
+        </div>
       </div>
     </div>
   );

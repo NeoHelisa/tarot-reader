@@ -16,7 +16,7 @@ body {
 }
 
 .root-wrapper {
-  background-color: #13163fd3;
+  background-color: #030518d3;
   border-right: #e1d5ec 3px solid;
   border-left: #e1d5ec 3px solid;
   position: absolute;
@@ -27,10 +27,27 @@ body {
   height: 100vh;
   margin-top: auto;
   margin-bottom: auto;
+  box-shadow: 0 0 15px #e1d5ec;
 }
 
 .root-container {
   background-color: #13163f67;
   width: 100vw;
   height: 100vh;
+}
+
+.bottom-1, .bottom-3 {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+.bottom-1 {
+  border-right: #e1d5ec 3px solid;
+  transform: translateX(-50%);
+}
+
+.bottom-3 {
+  border-left: #e1d5ec 3px solid;
+  transform: translateX(50%);
 }
