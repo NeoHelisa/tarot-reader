@@ -12,6 +12,7 @@ type CardData = {
   chant: string;
   image: string;
   position: "upright" | "reversed"; // Added position property
+  status: string; // Add status property for "SAFE" or "CURSED"
 };
 
 const CardReveal: React.FC<Props> = ({ chantInput, onReset }) => {
@@ -52,7 +53,7 @@ const CardReveal: React.FC<Props> = ({ chantInput, onReset }) => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen ">
+    <div className="flex flex-col items-center justify-center h-screen mt-6">
       {/* Static default image */}
       {!isSpinning && !revealedCard ? (
         <div className="w-full flex justify-center max-w-[960px] aspect-video rounded-lg shadow-lg">
@@ -107,19 +108,28 @@ const CardReveal: React.FC<Props> = ({ chantInput, onReset }) => {
       )}
 
       {/* Buttons */}
-      <div className="mt-8">
-        <button
-          onClick={handleReveal}
-          className="px-6 py-3 bg-blue-500 text-white rounded-lg"
-        >
-          Reveal
-        </button>
-        <button
-          onClick={onReset}
-          className="ml-4 px-6 py-3 bg-gray-500 text-white rounded-lg"
-        >
-          Reset
-        </button>
+      <div className="mt-2">
+        
+      <span className="status-text flex text-center justify-center text-xl font-bold w-100">
+        {revealedCard
+          ? `${revealedCard.tarot} - ${revealedCard.position}` // Card name and position
+          : "?????"}
+      </span>
+
+        <div className="mt-4 flex justify-center">
+          <button
+            onClick={handleReveal}
+            className="reveal px-6 py-3 bg-blue-500 text-white rounded-lg"
+          >
+            REVEAL
+          </button>
+          <button
+            onClick={onReset}
+            className="ml-4 px-6 py-3 bg-gray-500 text-white rounded-lg"
+          >
+            BACK
+          </button>
+        </div>
       </div>
     </div>
   );

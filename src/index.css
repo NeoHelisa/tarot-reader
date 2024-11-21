@@ -75,14 +75,14 @@ body {
 
 }
 
-.form button {
+.form button, .reveal {
     text-transform: uppercase;
     font-weight: bold;
     background-color: #602ee0b4;
     border: #e1d5ec 2px solid;
 } 
 
-.form button:hover, .form button:active  {
+.form button:hover, .form button:active, .reveal:hover, .reveal:active  {
   text-transform: uppercase;
   font-weight: bold;
   background-color: #520dff99;
@@ -103,4 +103,16 @@ body {
   position: absolute;
   bottom: 0;
   right: 10px;
+}
+
+.safe-card {
+ color: #fff5bbd3;
+}
+
+.cursed-card {
+  color: #6b11eacd;
+}
+
+.status-text {
+  text-transform: uppercase;
 }
