@@ -294,7 +294,7 @@
         "artist": "Britney Spears",
         "song": "Womanizer",
         "tarot": "King of Wands",
-        "chant": "flamma",
+        "chant": "Ardoris",
         "status": "1",
         "position": "upright",
         "description": "A leader burns brightly with ambition, yet risks scorching those who follow."
@@ -306,7 +306,7 @@
         "artist": "POLNALYUBVI",
         "song": "Tvoi Glaza",
         "tarot": "The Hermit",
-        "chant": "solus",
+        "chant": "Solitudo",
         "status": "1",
         "position": "upright",
         "description": "With wisdom shared, a guiding light scatters the spirits’ shadows."
@@ -318,7 +318,7 @@
         "artist": "İrem Derici",
         "song": "Dur Yavaş",
         "tarot": "King of Cups",
-        "chant": "cordis",
+        "chant": "Concordio",
         "status": "0",
         "position": "reversed",
         "description": "Detachment from others risks vulnerability, leaving you open to spiritual disruptions."
@@ -330,7 +330,7 @@
         "artist": "Léa Sen",
         "song": "Dragonfly",
         "tarot": "Ten of Cups",
-        "chant": "harmonia",
+        "chant": "Serenium",
         "status": "0",
         "position": "reversed",
         "description": "Mutual support reinforces protection, driving the spirits away."
@@ -342,7 +342,7 @@
         "artist": "David Lynch & Lykke Li",
         "song": "I'm Waiting Here",
         "tarot": "Seven of Pentacles",
-        "chant": "fructus",
+        "chant": "Crescendo",
         "status": "1",
         "position": "upright",
         "description": "Quiet diligence plants seeds of protection, but waiting too long risks decay."
@@ -354,7 +354,7 @@
         "artist": "Fia Moon",
         "song": "Back To Me",
         "tarot": "Two of Swords",
-        "chant": "duellum",
+        "chant": "Bifurca",
         "status": "1",
         "position": "upright",
         "description": "Harmony prevails, and the spirits are left without openings."
@@ -366,7 +366,7 @@
         "artist": "Polarkreis 18",
         "song": "Unendliche Sinfonie",
         "tarot": "The Tower",
-        "chant": "ruina",
+        "chant": "Fragor",
         "status": "1",
         "position": "upright",
         "description": "Chaos tears down false foundations, leaving a path to rebuild or succumb to despair."
@@ -378,7 +378,7 @@
         "artist": "Kaleo",
         "song": "Bang Bang",
         "tarot": "Queen of Swords",
-        "chant": "regina",
+        "chant": "Praecisio",
         "status": "1",
         "position": "reversed",
         "description": "Clear-headed and balanced, you see through the spirits’ illusions."
@@ -390,7 +390,7 @@
         "artist": "Amanda Marshall",
         "song": "Believe In You",
         "tarot": "Ace of Swords",
-        "chant": "gladius",
+        "chant": "Incisio",
         "status": "1",
         "position": "upright",
         "description": "A blade of truth cuts through illusion, yet sharp words risk severing vital connections."
@@ -402,7 +402,7 @@
         "artist": "Steve Aoki & Irina Rimes",
         "song": "Dudadu (Remix)",
         "tarot": "Ace of Cups",
-        "chant": "fons",
+        "chant": "Fluenta",
         "status": "1",
         "position": "reversed",
         "description": "A calm tide of emotion shields you, leaving no space for the spirits to intrude."
@@ -414,7 +414,7 @@
         "artist": "Holly Macve",
         "song": "Almost A Miracle",
         "tarot": "Ace of Pentacles",
-        "chant": "radix",
+        "chant": "Stabilitas",
         "status": "1",
         "position": "upright",
         "description": "Foundations of stability are laid, but greed or fear can weaken the structure."
@@ -426,7 +426,7 @@
         "artist": "TGC",
         "song": "Norwegian Dream",
         "tarot": "Page of Pentacles",
-        "chant": "discipulus",
+        "chant": "Initium",
         "status": "0",
         "position": "reversed",
         "description": "Focus and diligence protect you, leaving no room for the spirits to linger."
@@ -438,7 +438,7 @@
         "artist": "Chrissy Chlapecka",
         "song": "I Only Want You",
         "tarot": "Queen of Cups",
-        "chant": "gratia",
+        "chant": "Aequitas",
         "status": "1",
         "position": "upright",
         "description": "Intuition flows like water, but too much compassion risks self-sacrifice."
@@ -450,7 +450,7 @@
         "artist": "The Kiffness",
         "song": "Let Me In",
         "tarot": "The Chariot",
-        "chant": "triumphus",
+        "chant": "Acceleris",
         "status": "1",
         "position": "upright",
         "description": "A steady hand guides the way, closing the door to the spirits."
@@ -462,7 +462,7 @@
         "artist": "Louane ft. p3gase",
         "song": "soleil",
         "tarot": "The Star",
-        "chant": "lucida",
+        "chant": "Spesluna",
         "status": "1",
         "position": "upright",
         "description": "Balanced faith illuminates the path, keeping the spirits at bay."
@@ -474,7 +474,7 @@
         "artist": "Brimhvítt",
         "song": "Dóttir Kong",
         "tarot": "Temperance",
-        "chant": "harmonia",
+        "chant": "Moderatio",
         "status": "1",
         "position": "upright",
         "description": "Flowing unity strengthens protection, leaving the spirits with no entry."
@@ -486,7 +486,7 @@
         "artist": "Faun feat. Lindy-Fay Hella",
         "song": "Galdra",
         "tarot": "The Magician",
-        "chant": "arcana",
+        "chant": "Mysteria",
         "status": "1",
         "position": "upright",
         "description": "Confidence channels unseen forces, yet unchecked ego risks turning strength to folly."
@@ -498,7 +498,7 @@
         "artist": "Mónica Mara",
         "song": "Me Lo Prometí",
         "tarot": "Seven of Swords",
-        "chant": "umbra",
+        "chant": "Subterfuge",
         "status": "0",
         "position": "reversed",
         "description": "Honest action strengthens your defenses against the spirits."
@@ -510,7 +510,7 @@
         "artist": "Imogen Heap",
         "song": "What Have You Done To Me?",
         "tarot": "Queen of Pentacles",
-        "chant": "mater",
+        "chant": "Nutritia",
         "status": "0",
         "position": "reversed",
         "description": "Overprotection creates vulnerabilities. The spirits find gaps to exploit."
@@ -522,7 +522,7 @@
         "artist": "Mt. Wolf",
         "song": "Bohemia",
         "tarot": "The Emperor",
-        "chant": "imperator",
+        "chant": "Imperatus",
         "status": "1",
         "position": "upright",
         "description": "Compassionate leadership inspires unity, repelling the spirits with strength."
@@ -534,7 +534,7 @@
         "artist": "Chamaa X Eljoee",
         "song": "Atlas",
         "tarot": "Death",
-        "chant": "renascita",
+        "chant": "Transitus",
         "status": "1",
         "position": "upright",
         "description": "Transformation clears the path for renewal, yet resistance to change risks entrapment."
@@ -546,7 +546,7 @@
         "artist": "N-Euro",
         "song": "Lover On The Line",
         "tarot": "Seven of Wands",
-        "chant": "fortitudo",
+        "chant": "Forticula",
         "status": "1",
         "position": "upright",
         "description": "Courage holds the line. The spirits are unable to breach your defenses."
@@ -558,7 +558,7 @@
         "artist": "Anna Vissi",
         "song": "Alitissa Psihi",
         "tarot": "The Moon",
-        "chant": "umbra",
+        "chant": "Umbralis",
         "status": "0",
         "position": "reversed",
         "description": "Defenses crumble under pressure, as the spirits exploit isolation."
@@ -570,7 +570,7 @@
         "artist": "PARG",
         "song": "ARAJ",
         "tarot": "Knight of Cups",
-        "chant": "miles",
+        "chant": "Devotio",
         "status": "1",
         "position": "reversed",
         "description": "Steady devotion builds bonds, pushing the spirits far from reach."
@@ -582,7 +582,7 @@
         "artist": "Melissa Horn",
         "song": "Hejdå För Alltid",
         "tarot": "Queen of Wands",
-        "chant": "ignis",
+        "chant": "Lumina",
         "status": "1",
         "position": "reversed",
         "description": "Balanced focus spreads light, leaving the spirits in shadow."
